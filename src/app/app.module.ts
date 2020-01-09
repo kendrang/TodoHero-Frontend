@@ -7,6 +7,10 @@ import { RegisterComponent } from './Auth/register/register.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { SuccessfulRegisterComponent } from './Auth/successful-register/successful-register.component';
 import { HomeComponent } from './home/home.component';
+import {RouterModule} from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,21 @@ import { HomeComponent } from './home/home.component';
     RegisterComponent,
     LoginComponent,
     SuccessfulRegisterComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      {path:'', component: HomeComponent},
+      {path:'register', component: RegisterComponent},
+      {path:'login', component: LoginComponent},
+      {path:'successful-register', component: SuccessfulRegisterComponent},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+.header{
+
+    font-family: Tahoma, sans-serif ;
+    padding:5px 20px;
+    background-image: linear-gradient(rgb(93, 179, 250),white);
+}
+.logo{
+    margin-left: 300px;
+}
+.buttons{
+    margin-right: -300px;
+}
