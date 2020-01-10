@@ -11,6 +11,7 @@ import {RouterModule} from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TasksComponent } from './tasks/tasks.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SuccessfulRegisterComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       {path:'register', component: RegisterComponent},
       {path:'login', component: LoginComponent},
       {path:'successful-register', component: SuccessfulRegisterComponent},
+      {path: 'tasks', component: TasksComponent},
     ])
   ],
   providers: [],
