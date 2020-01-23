@@ -71,10 +71,12 @@
   
   /* Style the header */
   .header {
-    background-color: #449c74;
+    background-color: #5bc289;
     padding: 30px 40px;
     color: white;
     text-align: center;
+    border-top-right-radius: 50% 60px;
+    border-top-left-radius: 50% 60px;
   }
   
   /* Clear floats after the header */
